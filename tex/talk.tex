@@ -52,8 +52,8 @@ data using a general-purpose learning procedure.
 (Slide 6) Frank Rosenblatt was a psychologist at the Cornell Aeronautical
 Laboratory. He was inspired by the work of Donald O. Hebb, who a decade earlier
 had predicted how learning might work: As one neuron fires and activates
-another, repeatedly, the cells improve their joint efficiency. “The cells that
-fire together, wire together”, as cognitive scientists like to say. This simple
+another, repeatedly, the cells improve their joint efficiency. ``The cells that
+fire together, wire together'', as cognitive scientists like to say. This simple
 idea, Rosenblatt thought, was enough to build a machine that could learn to
 identify objects. In 1957 he built it, and called it the Perceptron.
 
@@ -82,17 +82,17 @@ b. Update the weights:
 \(w_i(t+1) = w_i(t) + \alpha (d_j - y_j(t)) x_{j,i} \) for all \(0 \leq i \leq
 n\), where \(0 < \alpha \leq 1\) is the learning rate.
 
-(Slide 9) It was a thrilling development, and Rosenblatt wasn’t afraid to share
-it. In the summer of 1958, he held a news conference with hissponsor, the
+(Slide 9) It was a thrilling development, and Rosenblatt wasn't afraid to share
+it. In the summer of 1958, he held a news conference with his sponsor, the
 U.S. Navy. As so often happens in science, he began to talk about the future. To
 researchers then, he sounded foolish; heard today, prescient. The New York Times
 caught the gist of it:
 
-“The Navy revealed the embryo of an electronic computer today that it expects
+``The Navy revealed the embryo of an electronic computer today that it expects
 will be able to walk, talk, see, write, reproduce itself and be conscious of its
 existence. … Later Perceptrons will be able to recognize people and call out
 their names and instantly translate speech in one language to speech and writing
-in another language.”
+in another language.''
 
 Rosenblatt’s fame irked his peers, many of whom had opted to pursue rules-based
 artificial intelligence; both sides were chasing after the same military
@@ -104,11 +104,11 @@ criticizing Rumelhart's connectionist approach.
 
 (Slide 11)  The book proved that not only can't a single layer perceptron
 emulate XOR or XNOR, but also that in three-layered feed-forward perceptrons
-(with a so-called  “hidden” or “intermediary” layer), it is not possible to
+(with a so-called  ``hidden'' or ``intermediary'' layer), it is not possible to
 compute some predicates unless at least one of the neurons in the first layer of
-neurons (the  “intermediary” layer) is connected with a non-null weight to each
-and every input. Furthermore perceptrons are unable to solve the connectivity
-problem.
+neurons (the  ``intermediary'' layer) is connected with a non-null weight to
+each and every input. Furthermore perceptrons are unable to solve the
+connectivity problem.
 
 The effect of the book was devastating: virtually no research at all was done
 in connectionism for 10 years. Eventually, a new generation of researchers would
@@ -180,7 +180,7 @@ faded into obscurity once again.
 \section{The Return of Neural Networks}
 (Slide 17)  Then in 2006 in a series of papers,
 Geoffrey Hinton, Yoshua Bengio and Yan LeCun revived interest in what they now
-called \textit{“Deep Learning”}.
+called \textit{''Deep Learning”}.
 
 (Slide 18) Hinton, G. E., Osindero, S. \& Teh, Y.-W. A fast learning algorithm
 for deep belief nets. \textit{Neural Comp.} \textbf{18}, 1527–1554
@@ -210,7 +210,7 @@ learning for speech recognition.
 Now I want to tell you about two of the methods being used in deep learning.
 
 \section{Convolutional Neural Networks}
-(Slide 20) Colloquialy called ConvNets, Convolutional Neural Networks are
+(Slide 20) Colloquially called ConvNets, Convolutional Neural Networks are
 designed to process data that come in the form of multiple arrays, \textit{e.g.}
 a color image composed of three 2D arrays containing pixel intensities in the
 RGB channels. Data that comes in the form of multiple arrays are: 1D for
@@ -232,14 +232,14 @@ max-pooling layer is extremely popular. From a high level perspective, we don’
 care about precisely where or when a feature is present. A max-pooling layer
 takes the maximum of features over small blocks of a previous layer. The output
 tells us if a feature was present in a region of the previous layer, but not
-exactly where (as if we had “zoomed out”). They allow later convolutional layers
+exactly where (as if we had ``zoomed out''). They allow later convolutional layers
 to work on larger sections of the data, and they also make the output invariant
 to some very small transformations of the data (like noise).
 
 In traditional convolutional layers, \(A\) is a bunch of neurons in parallel,
 that all get the same inputs and compute different features, but in a recent
 paper \textit{Network In Network} by Min Lin, Qiang Chen and Shuicheng Yan a new
-“Mlpconv” layer is proposed. There A would have multiple layers of neurons, with
+``Mlpconv'' layer is proposed. There A would have multiple layers of neurons, with
 the final layer outputting higher level features for the region.
 
 (Slide 22) What is a convolution? A convolution is a mathematical operation on
@@ -305,7 +305,7 @@ where they have proved that the filter that fits a sequence of inputs is a
 convolution followed by some mathematical manipulation.
 
 Recently Pankaj Mehta and David Schwab, proved that the statistical technique
-called “renormalization” (used by physicists to accurately describe systems
+called ``renormalization''  (used by physicists to accurately describe systems
 without knowing the exact state of all their component parts) also enables
 neural networks to categorize data as, regardless of transformations such as
 color, size or orientation.
